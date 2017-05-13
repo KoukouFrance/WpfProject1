@@ -7,7 +7,7 @@ namespace WpfAppTest1.Models
     {
 
         public event PropertyChangedEventHandler PropertyChanged;
-
+        private double _salary;
         private string _name;
         private string v;
 
@@ -16,6 +16,18 @@ namespace WpfAppTest1.Models
             Name = name;
         }
 
+        public double Salary
+        {
+            get
+            {
+                return _salary;
+            }
+
+            set
+            {
+                _salary = value;
+            }
+        }
         public string Name
         {
             get { return _name; }
