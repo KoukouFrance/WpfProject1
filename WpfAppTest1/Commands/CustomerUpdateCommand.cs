@@ -7,10 +7,10 @@ namespace WpfAppTest1.Commands
 {
     internal class CustomerUpdateCommand : ICommand
     {
-        private double metrics;
+        private string metrics;
         private CustomerViewModel _customerViewModel;
 
-        public double Metrics  { get; set; }
+        public string Metrics  { get; set; }
 
         public CustomerUpdateCommand(CustomerViewModel customerViewModel)
         {
