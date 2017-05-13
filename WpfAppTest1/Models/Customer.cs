@@ -8,11 +8,11 @@ namespace WpfAppTest1.Models
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-
+      
   
 
         private double _salary;
-        private string _name;
+        private string _firstLastName;
 
         private string v;
 
