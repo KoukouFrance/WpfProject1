@@ -7,8 +7,13 @@ namespace WpfAppTest1.Models
     {
 
         public event PropertyChangedEventHandler PropertyChanged;
+
+      
+  
+
         private double _salary;
-        private string _name;
+        private string _firstLastName;
+
         private string v;
 
         public Customer(string name)
@@ -30,16 +35,16 @@ namespace WpfAppTest1.Models
         }
         public string Name
         {
-            get { return _name; }
+            get { return _firstLastName; }
             set
             {
-                _name = value;
+                _firstLastName = value;
 
 
-                if (_name != value)
+                if (_firstLastName != value)
                 {
-                    _name = value;
-                    PropertyChanged(this, new PropertyChangedEventArgs(_name));
+                    _firstLastName = value;
+                    PropertyChanged(this, new PropertyChangedEventArgs(_firstLastName));
                 }
             }
         }
